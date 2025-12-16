@@ -38,7 +38,8 @@ jobs:
 
       - name: Build backend Docker image
         run: |
-          docker build -t backend-app:latest ./backend
+          docker build -t backend-app:new1 ./backend
+          docker images 
 
   frontend:
     name: Build Frontend & Docker Image
@@ -68,5 +69,6 @@ jobs:
 
       - name: Build frontend Docker image
         run: |
-          docker build -t frontend-app:latest ./frontend
+          docker build -t frontend-app:new1 ./frontend
+          docker images
 
